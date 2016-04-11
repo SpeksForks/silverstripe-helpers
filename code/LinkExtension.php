@@ -53,7 +53,7 @@ class LinkExtension extends DataExtension {
 
         return join(' ', [$this->owner->getTargetAttr(), $this->getDownloadAttribute(), $this->getTitleAttribute()]);
     }
-    
+
     public function canView($member = null) {
         return Permission::check('CMS_ACCESS_CMSMain', 'any', $member);
     }
